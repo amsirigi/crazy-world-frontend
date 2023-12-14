@@ -1,0 +1,101 @@
+
+<div class="container mt-5">
+ <div class="row">
+   <div class="col-md-8 offset-md-2 text-center">
+     <h1>Welcome to Our World Explorer!</h1>
+     <p class="lead">Discover fascinating information about countries around the world.</p>
+     <div class="input-group mb-3">
+       <input type="text" class="form-control" placeholder="Search for countries...">
+       <div class="input-group-append">
+         <button class="btn btn-primary" type="button">Search</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="row mt-5">
+   <div class="col-md-6">
+     <h2>Crazy World</h2>
+     <p>Journey through Crazy World's incredible diversity of 266 unique global entities. It's your ultimate hub of knowledge, offering a captivating glimpse into the rich history, diverse cultures, and multifaceted aspects of nations worldwide.</p>
+
+   </div>
+   <div class="col-md-6">
+     <img src="assets/image/map.jpg" alt="World Map" class="img-fluid rounded" style="height: 300px;">
+   </div>
+ </div>
+</div>
+
+<div class="row mt-5">
+ <div class="col-md-6">
+   <h2>Exploring World & It's Region</h2>
+   <p>Embark on a captivating exploration of the world and its myriad regions with us.
+      Our platform invites you to delve into the unique characteristics that define
+      each corner of the globe. From the sun-kissed shores of tropical paradises to the
+      snow-capped peaks of mountainous terrains, every region offers a distinctive experience.
+      Immerse yourself in the vibrant cultures, savor the local flavors, and witness the
+      beauty that sets each region apart. Whether you're drawn to the bustling energy of
+      urban landscapes or the tranquility of rural retreats, our journey through the
+      world's regions promises a tapestry of discovery. Join us as we celebrate the
+      diversity that makes our planet extraordinary, one region at a time. Explore,
+      connect, and be inspired by the unparalleled wonders that await across the vast
+       expanse of our global home.</p>
+
+ </div>
+ <div class="col-md-6">
+   <img src="assets/image/world and it's region.jpg" alt="World Map" class="img-fluid rounded" style="height: 300px;">
+ </div>
+</div>
+
+<div class="row mt-5">
+ <div class="col-md-6">
+   <h2>Exploring Language Dynamics</h2>
+   <p>Crazy World offers a comprehensive exploration of languages, from their nuances in communication to their influence on societal structures. It delves into the linguistic intricacies, exploring dialects, scripts, and the evolution of languages across different territories.</p>
+
+ </div>
+ <div class="col-md-6">
+   <img src="assets/image/language.jpg" alt="World Map" class="img-fluid rounded" style="height: 300px;">
+ </div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let fa of items" class="col-3 mb-5 section">
+      <h5 class="mb-3">{{fa.name}}</h5>
+      <p>{{fa.description}}</p>
+      <a href="#" class="btn btn-light" routerLink="/world-travel-facts">Learn more</a>
+    </div>
+    <div class="w-100"></div>
+  </div>
+
+  <!-- Bootstrap Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide mb-2 container" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100 cro" style="height: 450px;" src="https://plus.unsplash.com/premium_photo-1681488098851-e3913f3b1908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 cro" style="height: 450px;"src="https://plus.unsplash.com/premium_photo-1677025010721-e376c2e330ca?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 cro" style="height: 450px;"src="https://images.pexels.com/photos/2677814/pexels-photo-2677814.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
+</div>

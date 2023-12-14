@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crazy-world-fronend';
-}
+  isDarkTheme: boolean = true; // Initially set to dark theme  
+   toggleTheme(): 
+   void {     this.isDarkTheme = !this.isDarkTheme;   
+  }
+ }
+
+

@@ -1,0 +1,12 @@
+/* Define your dark and light themes here */
+.dark-theme {
+    /* Dark theme styles */
+    background-color: #333;
+    color: #fff;
+}
+
+.light-theme {
+    /* Light theme styles */
+    background-color: #fff;
+    color: #333;
+}
