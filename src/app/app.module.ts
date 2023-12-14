@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { TermsOfUseComponent } from './components/terms-of-use/terms-of-use.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
+    AboutUsComponent,
+    TermsOfUseComponent,
+    HomePageComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
