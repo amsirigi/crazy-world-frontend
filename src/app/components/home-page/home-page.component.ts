@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -6,6 +7,31 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {
+
+
+  constructor(private route:Router){}
+
+
+
+  goToCountries(){
+    this.route.navigate(['countries']);
+  }
+
+
+  goToFacts(){
+    this.route.navigate(['facts'])
+  }
+
+
+  onSearchClick(value:string){
+    this.route.navigateByUrl(`/search/${value}`);
+  }
+
+  goToCodes(){
+    this.route.navigate(['find']);
+  }
+
+
 
   items = [
     {
@@ -22,7 +48,7 @@ export class HomePageComponent {
     },
     {
       name:"Global Governance Mosaic",
-      description:"      Exploring Unique and Diverse Forms of Government Worldwide"
+      description:"              Exploring Unique and Diverse Forms of Government Worldwide"
     }
   
   ] 
