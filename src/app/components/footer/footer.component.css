@@ -1,13 +1,6 @@
 
 #footer-top{
     background-color: #c7cecc;
-    background: linear-gradient(
-        to right,
-        #0F1831 40%,
-        #32508C 100%,
-        #1c6c94 80%,
-        #4b5776 100%
-      );
 }
 .list-unstyled{
     font-size: small;
@@ -15,12 +8,4 @@
 }
 p{
     font-size: small;
-}
-
-#form {
-    background-color: #0F1831 40%,
-    ;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
