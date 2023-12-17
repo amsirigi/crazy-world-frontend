@@ -1,0 +1,12 @@
+<!-- all-cities.component.html -->
+<div class="container">
+    <h2>List of Cities</h2>
+    <div *ngFor="let city of cities" class="city-card">
+      <div class="city-details">
+        <h4>{{ city.name }}</h4>
+        <p><strong>District:</strong> {{ city.district }}</p>
+        <p><strong>Population:</strong> {{ city.population }}</p>
+      </div>
+    </div>
+  </div>
+  

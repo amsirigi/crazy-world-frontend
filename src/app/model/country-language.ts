@@ -4,10 +4,10 @@ import { Country } from "./country";
 export class CountryLanguage {
 
     constructor(
-        language:string,
-        isOfficial:IsOfficial,
-        percentage:number,
-        country:Country
+        public language:string,
+        public isOfficial:IsOfficial,
+        public percentage:number,
+        public country:Country
 
     ){}
 }

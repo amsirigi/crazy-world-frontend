@@ -1,0 +1,17 @@
+/* highest-life-expectancy.component.css */
+.country-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .country-info h3 {
+    font-size: 24px;
+  }
+  
+  .country-info p {
+    font-size: 18px;
+  }
+  
+  /* Add more styles as needed */
+  

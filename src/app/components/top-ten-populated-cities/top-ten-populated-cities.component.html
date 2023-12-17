@@ -1,0 +1,11 @@
+<!-- top-ten-populated-cities.component.html -->
+<div class="container mt-5">
+    <h2 class="mb-4">Top Ten Populated Cities</h2>
+    <ul class="list-group">
+      <li *ngFor="let city of topTenPopulatedCities" class="list-group-item d-flex justify-content-between align-items-center">
+        <span>{{ city.name }}</span>
+        <span class="badge badge-primary badge-pill">Population: {{ city.population }}</span>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,35 @@
+<div style="margin-bottom: 20px;">
+    <input type="text" [(ngModel)]="countryName" placeholder="Enter Country Name" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    <button (click)="getCityDetails()" style="padding: 8px 16px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Get City Details</button>
+  </div>
+  
+  <div *ngIf="isSearchClicked">
+    <p>Loading...</p>
+  </div>
+  
+  <div *ngIf="!isSearchClicked && cities.length > 0; else noCities">
+    <h2>City Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>District</th>
+          <th>Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let city of cities">
+          <td>{{ city.name }}</td>
+          <td>{{ city.district }}</td>
+          <td>{{ city.population }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <ng-template #noCities>
+    <p *ngIf="!isSearchClicked && cities.length === 0">
+        {{errorMessage}}
+    </p>
+  </ng-template>
+  

@@ -1,0 +1,47 @@
+<!-- <div class="container mt-5">
+    <div >
+      <div class="row">
+        <div *ngIf="countries">
+          <h2>History</h2>
+          <p>{{ countries.history}}</p>
+        </div>
+        <div>
+          <h2>Geography</h2>
+          <p>{{ countries.geography}}</p>
+        </div>
+        <div>
+          <h2>Traditions</h2>
+          <p>{{ countries.traditions}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+   -->
+
+
+   <!-- countrydetails.component.html -->
+<div class="container mt-5">
+    <div *ngIf="countries">
+      <div class="row">
+        <div>
+            <h2>{{ countries?.name }}</h2>
+          </div>
+        <div>
+          <h2>History</h2>
+          <p>{{ countries?.history }}</p>
+        </div>
+        <div>
+          <h2>Geography</h2>
+          <p>{{ countries?.geography }}</p>
+        </div>
+        <div>
+          <h2>Traditions</h2>
+          <p>{{ countries?.traditions }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
