@@ -1,0 +1,18 @@
+<p>unique-languages works!</p>
+<div class="mt-4">
+    <h3>All Unique Languages</h3>
+    <button class="btn btn-primary" (click)="getAllUniqueLanguages()">Get All Unique Languages</button>
+    <table *ngIf="uniqueLanguages" class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let language of uniqueLanguages">
+          <td>{{ language.language }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
