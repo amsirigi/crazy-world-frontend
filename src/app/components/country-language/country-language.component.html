@@ -1,0 +1,21 @@
+
+
+ <div class="row">
+  <div class="col-md-3 left-side bg-light text-dark p-4">
+    <h2>Country Languages</h2>
+    <nav class="nav flex-column">
+      <li><a routerLink="/lang/unique-languages">All Unique Languages</a></li>
+      <li><a routerLink="/lang/country-languages">Country Languages by Code</a></li>
+      <li><a routerLink="/lang/official-languages">All Official Country Languages</a></li>
+      <li><a routerLink="/lang/unofficial-languages">Unofficial Country Languages by Code</a></li>
+      <li><a routerLink="/lang/max-spoken-languages">Max Spoken Languages</a></li>
+      <li><a routerLink="/lang/max-spoken-language-by-code">Max Spoken Language by Code</a></li>
+    </nav>
+  </div>
+  <div class="col-md-9 separator p-4">
+    <p *ngIf="worldFactsParagraph" class="lead">{{ worldFactsParagraph }}</p>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

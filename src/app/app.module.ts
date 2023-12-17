@@ -27,6 +27,13 @@ import { RegionLanguagesComponent } from './components/region-languages/region-l
 import { FirstTenCitiesComponent } from './components/first-ten-cities/first-ten-cities.component';
 import { DistrictListComponent } from './components/district-list/district-list.component';
 import { AllCitiesComponent } from './components/all-cities/all-cities.component';
+import { CountryLanguageComponent } from './components/country-language/country-language.component';
+import { UniqueLanguagesComponent } from './components/unique-languages/unique-languages.component';
+import { OfficialLanguagesComponent } from './components/official-languages/official-languages.component';
+import { MaxSpokenLanguagesComponent } from './components/max-spoken-languages/max-spoken-languages.component';
+import { MaxSpokenLanguageByCodeComponent } from './components/max-spoken-language-by-code/max-spoken-language-by-code.component';
+import { UnofficialLanguagesComponent } from './components/unofficial-languages/unofficial-languages.component';
+import { CountryLanguagesComponent } from './components/country-languages/country-languages.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +59,13 @@ import { AllCitiesComponent } from './components/all-cities/all-cities.component
     FirstTenCitiesComponent,
     DistrictListComponent,
     AllCitiesComponent,
+    CountryLanguageComponent,
+    UniqueLanguagesComponent,
+    CountryLanguagesComponent,
+    OfficialLanguagesComponent,
+    UnofficialLanguagesComponent,
+    MaxSpokenLanguagesComponent,
+    MaxSpokenLanguageByCodeComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,13 @@ import { RegionLanguagesComponent } from './components/region-languages/region-l
 import { FirstTenCitiesComponent } from './components/first-ten-cities/first-ten-cities.component';
 import { DistrictListComponent } from './components/district-list/district-list.component';
 import { AllCitiesComponent } from './components/all-cities/all-cities.component';
+import { CountryLanguageComponent } from './components/country-language/country-language.component';
+import { UniqueLanguagesComponent } from './components/unique-languages/unique-languages.component';
+import { CountryLanguagesComponent } from './components/country-languages/country-languages.component';
+import { MaxSpokenLanguageByCodeComponent } from './components/max-spoken-language-by-code/max-spoken-language-by-code.component';
+import { MaxSpokenLanguagesComponent } from './components/max-spoken-languages/max-spoken-languages.component';
+import { OfficialLanguagesComponent } from './components/official-languages/official-languages.component';
+import { UnofficialLanguagesComponent } from './components/unofficial-languages/unofficial-languages.component';
 
 const routes: Routes = [
   {path:'',component:HomePageComponent},
@@ -54,6 +61,18 @@ const routes: Routes = [
       { path: 'all-cities', component: AllCitiesComponent },
     ]
   },
+  { path: 'country-language', component: CountryLanguageComponent},
+  { path:'lang',
+  component: CountryLanguageComponent,
+children:[
+  { path: 'unique-languages', component: UniqueLanguagesComponent},
+  { path: 'country-languages', component: CountryLanguagesComponent },
+  { path: 'official-languages', component: OfficialLanguagesComponent },
+  { path: 'unofficial-languages', component: UnofficialLanguagesComponent },
+  { path: 'max-spoken-languages', component: MaxSpokenLanguagesComponent },
+  { path: 'max-spoken-language-by-code', component: MaxSpokenLanguageByCodeComponent },
+  // {path:'update',component:UpdatePercentageComponent}
+] },
 ];
 
 @NgModule({
