@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -34,6 +33,7 @@ import { MaxSpokenLanguagesComponent } from './components/max-spoken-languages/m
 import { MaxSpokenLanguageByCodeComponent } from './components/max-spoken-language-by-code/max-spoken-language-by-code.component';
 import { UnofficialLanguagesComponent } from './components/unofficial-languages/unofficial-languages.component';
 import { CountryLanguagesComponent } from './components/country-languages/country-languages.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -71,6 +71,7 @@ import { CountryLanguagesComponent } from './components/country-languages/countr
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    RouterModule.forRoot([]),
     FormsModule
   ],
   providers: [CountryService],
