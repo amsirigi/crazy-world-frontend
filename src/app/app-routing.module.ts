@@ -46,6 +46,7 @@ const routes: Routes = [
       { path: 'top-ten-gnp-countries', component: TopTenGnpCountriesComponent },
       { path: 'maxpopulatedcity', component: MaxPopulatedCityComponent },
       { path: 'toptenpopulatedcities', component: TopTenPopulatedCitiesComponent },
+     
       
     ]
   },

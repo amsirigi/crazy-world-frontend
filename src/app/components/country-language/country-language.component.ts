@@ -8,9 +8,7 @@ import { CountryLanguage } from '../../model/country-language';
   styleUrls: ['./country-language.component.css'],
 })
 export class CountryLanguageComponent {
-  worldFactsParagraph:string = "Did you know that Earth is home to over 7.9 billion people and 195 countries? " +
-"Explore the rich diversity of cultures, languages, and landscapes across the continents. " +
-"From the highest peaks to the deepest oceans, our planet is a treasure trove of wonders waiting to be discovered.";
+  countrylanguagefact:string = "The world is a linguistic kaleidoscope, hosting over 7,100 languages across different countries. Each nation contributes to this diversity with its set of official languages and dialects, painting a rich tapestry of communication.";
 
 }
 //  uniqueLanguages: CountryLanguage[] = [];
