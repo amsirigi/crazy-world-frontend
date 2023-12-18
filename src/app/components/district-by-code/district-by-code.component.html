@@ -1,0 +1,18 @@
+<div class="container">
+    <div>
+        <h4>Districts in Cities </h4>
+      <input type="text" [(ngModel)]="countryCode" (input)="fetchDistricts()" placeholder="Enter a Country Code" />
+    </div>
+    
+    <ul class="district-list">
+        
+      <li *ngFor="let district of districts" class="district-item">
+        <div class="district-details">
+          <span *ngIf="district.name !== null" class="district-name">{{ district.name }}</span>
+          <span *ngIf="district.district !== null" class="district-district">District : {{ district.district }}</span>
+        </div>
+        <div class="district-population" *ngIf="district.population !== null">Population: {{ district.population }}</div>
+      </li>
+    </ul>
+  </div>
+  

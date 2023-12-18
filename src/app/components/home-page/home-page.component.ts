@@ -9,25 +9,23 @@ import { Router } from '@angular/router';
 export class HomePageComponent {
 
 
-  constructor(private route:Router){}
+  constructor(private route: Router) { }
 
-
-
-  goToCountries(){
+  goToCountries() {
     this.route.navigate(['countries']);
   }
 
 
-  goToFacts(){
+  goToFacts() {
     this.route.navigate(['facts'])
   }
 
 
-  onSearchClick(value:string){
+  onSearchClick(value: string) {
     this.route.navigateByUrl(`/search/${value}`);
   }
 
-  goToCodes(){
+  goToCodes() {
     this.route.navigate(['find']);
   }
 
