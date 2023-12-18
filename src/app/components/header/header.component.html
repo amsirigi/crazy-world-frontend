@@ -4,6 +4,7 @@
     <a class="navbar-brand" href="#">
       <img src="assets/image/logo.jpg" height="60px" width="80px" alt="Logo">
     </a>
+    
 
     <!-- Navbar Toggler -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -18,17 +19,21 @@
           <a class="nav-link active" aria-current="page" href="#"><strong> CRAZY WORLD </strong></a>
         </li>
       </ul>
-
       <form class="d-flex align-items-center">
+        <i class="fa-solid fa-user-tie fa-fade fa-2xl" style="cursor: pointer; margin-left: 10px;" ></i>
+        <ul class="navbar-nav">
        
-    
-        <i class="fa-solid fa-user-tie fa-fade fa-2xl" style="cursor: pointer; margin-left: 10px;" onclick="gotoAdminProfile()"></i>
+          <li class="nav-item" *ngIf="!isLoggedIn()">
+            <a class="nav-link" routerLink="login">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="isLoggedIn()">
+            <a class="nav-link" routerLink="logout">Logout</a>
+          </li>
+        </ul>
     </form>
-    
-      
-   
 
-   
+    
+    
     </div>
   </div>
 </nav>

@@ -14,6 +14,7 @@ export class CountrydetailsComponent {
   constructor(private countryService: CountryService,
     private route:ActivatedRoute,
     private router:Router){}
+    errorMessage :string='';
 
   ngOnInit(){
     this.route.paramMap.subscribe(()=>{
@@ -31,20 +32,14 @@ export class CountrydetailsComponent {
           console.log(this.countries);
         },
         (error) => {
-          console.error('Error fetching country details:', error);
-          // You might want to handle the error in a way appropriate for your application
+          this.countries = null; 
+          this.errorMessage = 'No Details Found';
+          console.error('Country details not found', error);
         }
       );
     } else {
-      console.error('Country name is null.'); 
-      // Handle the case where countryName is null, maybe redirect or display an error message
+      console.error('Country name is null.');
     }
   }
-  
-  
-
-   
-
-
   
 }

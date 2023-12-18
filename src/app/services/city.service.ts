@@ -55,4 +55,20 @@ export class CityService {
         const urlCity = `${this.url}/getallcities`;
         return this.httpclient.get<City[]>(urlCity);
       }
+
+      getDistrictsByCountryCode(countryCode: string): Observable<City[]> {
+        const urlCity = `${this.url}/districts/${countryCode}`;
+        return this.httpclient.get<City[]>(urlCity);
+      }
+
+      getAvgPopulationByDistrict(districtName: string): Observable<City[]> {
+        const url = `${this.url}/avgpopulation/${districtName}`;
+        return this.httpclient.get<City[]>(url);
+      }
+      getCityCountByCountryName(countryName: string): Observable<string> {
+        const encodedCountryName = encodeURIComponent(countryName);
+        const url = `${this.url}/${encodedCountryName}/citycount`;
+        return this.httpclient.get(url, { responseType: 'text' });
+      }
+ 
 }

@@ -26,9 +26,17 @@ import { MaxSpokenLanguageByCodeComponent } from './components/max-spoken-langua
 import { MaxSpokenLanguagesComponent } from './components/max-spoken-languages/max-spoken-languages.component';
 import { OfficialLanguagesComponent } from './components/official-languages/official-languages.component';
 import { UnofficialLanguagesComponent } from './components/unofficial-languages/unofficial-languages.component';
+import { DistrictByCodeComponent } from './components/district-by-code/district-by-code.component';
+import { DistrictAvgPopulationComponent } from './components/district-avg-population/district-avg-population.component';
+import { CountryCityCountComponent } from './components/country-city-count/country-city-count.component';
+import { LoginComponent } from './components/login/login.component';
+import { LogindisplayComponent } from './components/logindisplay/logindisplay.component';
 
 const routes: Routes = [
   {path:'',component:HomePageComponent},
+  {path:'login',component: LoginComponent},
+  {path:'logout',component: LoginComponent},
+  {path:'logindisplay',component: LogindisplayComponent},
   {path:'about-us',component:AboutUsComponent},
   {path:'terms-of-use',component:TermsOfUseComponent},
   {path:'countries', component: CountryListComponent },
@@ -46,6 +54,9 @@ const routes: Routes = [
       { path: 'top-ten-gnp-countries', component: TopTenGnpCountriesComponent },
       { path: 'maxpopulatedcity', component: MaxPopulatedCityComponent },
       { path: 'toptenpopulatedcities', component: TopTenPopulatedCitiesComponent },
+      { path: 'countryCode', component: DistrictByCodeComponent },
+      { path: 'district-avg-population', component:  DistrictAvgPopulationComponent},
+      { path: 'citycount', component:  CountryCityCountComponent},
       
     ]
   },
@@ -71,7 +82,6 @@ children:[
   { path: 'unofficial-languages', component: UnofficialLanguagesComponent },
   { path: 'max-spoken-languages', component: MaxSpokenLanguagesComponent },
   { path: 'max-spoken-language-by-code', component: MaxSpokenLanguageByCodeComponent },
-  // {path:'update',component:UpdatePercentageComponent}
 ] },
 ];
 

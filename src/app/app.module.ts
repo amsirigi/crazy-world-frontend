@@ -34,6 +34,12 @@ import { MaxSpokenLanguageByCodeComponent } from './components/max-spoken-langua
 import { UnofficialLanguagesComponent } from './components/unofficial-languages/unofficial-languages.component';
 import { CountryLanguagesComponent } from './components/country-languages/country-languages.component';
 import { RouterModule } from '@angular/router';
+import { DistrictByCodeComponent } from './components/district-by-code/district-by-code.component';
+import { DistrictAvgPopulationComponent } from './components/district-avg-population/district-avg-population.component';
+import { CountryCityCountComponent } from './components/country-city-count/country-city-count.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { LogindisplayComponent } from './components/logindisplay/logindisplay.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +71,14 @@ import { RouterModule } from '@angular/router';
     OfficialLanguagesComponent,
     UnofficialLanguagesComponent,
     MaxSpokenLanguagesComponent,
-    MaxSpokenLanguageByCodeComponent
+    MaxSpokenLanguageByCodeComponent,
+    DistrictByCodeComponent,
+    DistrictAvgPopulationComponent,
+    CountryCityCountComponent,
+    LoginComponent,
+    LogindisplayComponent,
+    LogoutComponent
+
   ],
   imports: [
     BrowserModule,

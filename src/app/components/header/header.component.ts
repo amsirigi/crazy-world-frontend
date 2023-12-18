@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'header',
@@ -8,12 +9,13 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
  
   gotoAdminProfile(): void {
-    // You can navigate to the admin profile page using router.navigate if you're using Angular routing
-    // Example: this.router.navigate(['/admin-profile']);
- 
-    // Or perform any other action related to the admin profile
-    // For example, displaying a message
     console.log('Admin profile clicked');
+  }
+
+  constructor(private authService: AuthService){}
+ 
+  isLoggedIn(){
+    return this.authService.isLoggedIn;
   }
  
 }
