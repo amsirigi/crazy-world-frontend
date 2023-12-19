@@ -1,0 +1,33 @@
+
+
+  <div class="row">
+    <div class="col-md-3 left-side bg-light text-dark p-4">
+      <h2>Admin Update</h2>
+      <nav class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updateHeadofState">Head Of State</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updategnp">Gross National Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updatepopulation">Population</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updatepercentage">Language Percentage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updatedistrict">District</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logindisplay/updatecitypoppulation">City Population</a>
+        </li>
+      </nav>
+    </div>
+    <div class="col-md-9 separator p-4">
+      <p *ngIf="countrylanguagefact" class="lead">{{ countrylanguagefact }}</p>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+   
