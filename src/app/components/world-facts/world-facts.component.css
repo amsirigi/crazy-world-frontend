@@ -1,0 +1,23 @@
+/* world-facts.component.css */
+.left-side {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  padding: 10px;
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #e6f7ff;
+}
+
+.separator {
+  padding: 20px;
+}

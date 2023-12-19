@@ -1,0 +1,14 @@
+<div>
+    <label for="cityName">City Name:</label>
+    <input type="text" id="cityName" [(ngModel)]="cityName">
+    <br>
+    <label for="newDistrict">New District:</label>
+    <input type="text" id="newDistrict" [(ngModel)]="newDistrict">
+    <br>
+    <button (click)="updateDistrictForCity()">Update District for City</button>
+  
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  </div>
+  

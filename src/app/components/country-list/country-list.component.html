@@ -1,0 +1,25 @@
+
+<div class="container mt-5" style="margin-bottom: 10%;">
+    <div class="card">
+        <div class="row row-cols-md-3 g-3">
+            <div class="col-md-3" *ngFor="let tempCountry of countries">
+                <div class="card-header" style="margin-top: 20px; display: flex; flex-direction: column; height: 100%;">
+                    <div style="width: 100%; height: 100px; overflow: hidden;">
+                        <img class="card-img-top" src="{{tempCountry.imageUrl}}" alt="Card image" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="card-body" style="margin-top: 10px; flex-grow: 1;">
+                        <h4 class="card-title">
+                        {{tempCountry.name}}</h4>
+                        <div class="price"><b>Head Of State :</b> {{tempCountry.headOfState}}</div>
+                        <div class="region"><b>Region :</b>{{tempCountry.region}}</div>
+                        <div class="population"><b>Population :</b> {{tempCountry.population}}</div>
+                        <div class="govt"><b>Government Form : </b>{{tempCountry.governmentForm}}</div>
+                        <button routerLink="/country/{{tempCountry.name}}"  class="btn btn-primary mt-3">Explore More ->
+                        </button>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

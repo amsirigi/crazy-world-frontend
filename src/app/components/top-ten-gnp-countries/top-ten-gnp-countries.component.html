@@ -1,0 +1,14 @@
+<!-- top-ten-gnp-countries.component.html -->
+<div class="top-ten-gnp-countries">
+    <h2>Top Ten Countries by GNP</h2>
+    <div class="country-list">
+      <div *ngFor="let country of countries" class="country-item">
+        <div class="country-info">
+          <h3>{{ country.name }}</h3>
+          <p><strong>GNP:</strong> {{ country.gnp }}</p>
+          <!-- Add more details as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

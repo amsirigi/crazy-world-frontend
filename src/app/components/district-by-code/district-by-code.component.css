@@ -1,0 +1,38 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .district-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .district-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .district-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .district-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .district-district {
+    font-style: italic;
+  }
+  
+  .district-population {
+    margin-top: 5px;
+    color: #555;
+  }
+  

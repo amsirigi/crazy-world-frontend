@@ -4,22 +4,26 @@ import { CountryLanguage } from "./country-language";
 
 export class Country {
     constructor(
-        code: string,
-        name: string,
-        continentType: Continent,
-        region: string,
-        surfaceArea: number,
-        indepYear: number,
-        population: number,
-        lifeExpectancy: number,
-        gnp: number,
-        gnpOld: number,
-        localName: string,
-        governmentForm: string,
-        headOfState: string,
-        capital: number,
-        code2: string,
-        languages:CountryLanguage[] ,
-        cities:City[]
+        public code: string,
+        public name: string,
+        public continentType: Continent,
+        public region: string,
+        public surfaceArea: number,
+        public indepYear: number,
+        public population: number,
+        public lifeExpectancy: number,
+        public gnp: number,
+        public gnpOld: number,
+        public localName: string,
+        public governmentForm: string,
+        public headOfState: string,
+        public capital: number,
+        public code2: string,
+        public imageUrl:string ,
+	    public  history:string,
+	    public  geography:string,
+	    public  traditions:string,
+        public languages:CountryLanguage[] ,
+        public cities:City[]
     ){}
 }

@@ -1,0 +1,15 @@
+<!-- population-info.component.html -->
+
+<div class="container">
+    <h2>Population Info</h2>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter Country Code" [(ngModel)]="countrycode">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" (click)="getPopulationInfo()">Search</button>
+      </div>
+    </div>
+    <div *ngIf="populationAndLifeExceptency !== ''">
+        <p>{{ populationAndLifeExceptency }}</p>
+      </div>
+  </div>
+  

@@ -1,0 +1,7 @@
+<div>
+    <h2>Districts for Country: {{ districtName }}</h2>
+    <input type="text" [(ngModel)]="districtName" (input)="fetchDistricts()" placeholder="Enter a District name" />
+    <ul>
+      <li *ngFor="let city of cities">Average Population : {{ city.population}}</li>
+    </ul>
+  </div>

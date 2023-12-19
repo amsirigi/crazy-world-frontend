@@ -1,0 +1,6 @@
+<div>
+    <input type="text" [(ngModel)]="searchChar" (input)="fetchFirstTenCities()" placeholder="Enter a character" />
+    <ul>
+    <li *ngFor="let city of cities">{{ city }}</li> 
+    </ul>
+    </div>

@@ -1,0 +1,20 @@
+<div class="mt-5">
+    <h3>Country Languages by Code</h3>
+    <div class="form-group">
+      <label for="countryCodeInput">Enter Country Code:</label>
+      <input type="text" class="form-control" id="countryCodeInput" [(ngModel)]="countryCode" />
+    </div>
+    <button class="btn btn-primary" (click)="getCountryLanguagesByCode()">Get Country Languages</button>
+    <table *ngIf="countryLanguages" class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let language of countryLanguages">
+          <td>{{ language.language }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

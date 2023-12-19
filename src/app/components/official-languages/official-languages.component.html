@@ -1,0 +1,17 @@
+
+<div class="mt-5">
+    <h3>All Official Country Languages</h3>
+    <button class="btn btn-primary" (click)="getAllOfficialLanguages()">Get All Official Country Languages</button>
+    <table *ngIf="officialLanguages" class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let language of officialLanguages">
+          <td>{{ language.language }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

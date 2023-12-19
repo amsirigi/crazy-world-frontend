@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div *ngIf="countries && (countries.name || countries.history || countries.geography || countries.traditions)">
+    <div class="row">
+      <div>
+        <h2>{{ countries?.name }}</h2>
+      </div>
+      <div>
+        <h4>History</h4>
+        <p>{{ countries?.history }}</p>
+      </div>
+      <div>
+        <h4>Geography</h4>
+        <p>{{ countries?.geography }}</p>
+      </div>
+      <div>
+        <h4>Traditions</h4>
+        <p>{{ countries?.traditions }}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="(!countries || !(countries.name || countries.history || countries.geography || countries.traditions))">
+    <div class="col-md-12 text-center">
+      <h1>{{ errorMessage }}</h1>
+    </div>
+  </div>
+</div>

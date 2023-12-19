@@ -1,0 +1,14 @@
+<!-- unique-government-forms.component.html -->
+<div class="unique-government-forms">
+    <h2>Countries with Unique Government Forms</h2>
+    <div class="country-list">
+      <div *ngFor="let country of countries" class="country-item">
+        <div class="country-info">
+          <h3>{{ country.name }}</h3>
+          <p><strong>Government Form:</strong> {{ country.governmentForm }}</p>
+          <!-- Add more details as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

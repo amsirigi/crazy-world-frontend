@@ -18,17 +18,17 @@
         <h6 class="text-uppercase">Connect with us</h6>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
-            <a href="#!" class="text-white text-decoration-none">
+            <a href="https://www.facebook.com/" class="text-white text-decoration-none">
               <i class="fab fa-facebook-square"></i> Facebook
             </a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white text-decoration-none">
+            <a href="https://www.instagram.com/" class="text-white text-decoration-none">
               <i class="fab fa-instagram-square"></i> Instagram
             </a>
           </li>
           <li class="mb-2">
-            <a href="#!" class="text-white text-decoration-none">
+            <a href="https://twitter.com/" class="text-white text-decoration-none">
               <i class="fab fa-twitter-square"></i> Twitter
             </a>
           </li>
@@ -39,24 +39,86 @@
         <h6 class="text-uppercase mb-2">Let Us Help You</h6>
         <ul class="list-unstyled">
           <li class="mb-2">
-            <a href="#!" class="text-white text-decoration-none">Your Account</a>
+            <a href="#!" class="text-white text-decoration-none">Admin</a>
           </li>
           <li class="mb-2">
             <a href="#!" class="text-white text-decoration-none">Help</a>
           </li>
-          <li class="mb-2">
-            <button class="btn btn-outline-light">Contact Us</button>
-          </li>
+
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h6 class="text-uppercase mb-2">Registered Office Address:</h6>
-        <p class="mb-0"> Plot No 115/32, Plot No 1, Near NanakramGuda, Gachibowli-50002.</p>
+        <p class="mb-0">Plot No 115/32, Plot No 1, Near NanakramGuda, Gachibowli-50002.</p>
+        <div class="mt-3">
+        </div>
       </div>
+     
+      
     </div>
-  </div>
+      </div>
+      <section id="contact" class="add-padding border-top-color2">
+    
+        <div class="container text-center">
+          
+          <div class="row">
+          
+            <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+            
+              <h1 class="big-text">Collaborate with Us!</h1>
+              
+              <p class="lead">Software Engineer.<br>Full Stack Devoloper. Entrepreneur.</p>
+  
+              <p>Angular,JavaScript, HTML5, CSS3, Git, GitHub, WordPress.
+  
+              <p>Please feel free to contact us with questions, comments or collaborations.</p>
+  
+              <p>For more in-depth information about our team and our insights, visit our blog. <a routerLink="about-us" target="_blank">visit my blog.</a></p>
+            
+            </div>
+          
+  <!-- footer.component.html -->
 
+<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" (ngSubmit)="onSubmit()" novalidate>
+  <!-- Success message -->
+  <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
+
+  <!-- Form fields -->
+  <div class="form-group">
+    <label class="control-label" for="contact-name">Name</label>
+    <div class="controls">
+      <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" [(ngModel)]="formData.contactName" type="text" required>
+      <i class="fa fa-user"></i>
+    </div>
+  </div><!-- End name input -->
+
+  <div class="form-group">
+    <label class="control-label" for="contact-mail">Email</label>
+    <div class="controls">
+      <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" [(ngModel)]="formData.email" type="email" required>
+      <i class="fa fa-envelope"></i>
+    </div>
+  </div><!-- End email input -->
+
+  <div class="form-group">
+    <label class="control-label" for="contact-message">Message</label>
+    <div class="controls">
+      <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" [(ngModel)]="formData.comments" rows="6" required></textarea>
+      <i class="fa fa-comment"></i>
+    </div>
+  </div><!-- End textarea -->
+
+  <!-- Submit button -->
+  <p><button type="submit" class="btn btn-color2 btn-block" [disabled]="isFormSubmitting">Send Message</button></p>
+</form>
+
+
+          </div>
+          
+        </div>
+      
+      </section>
   <!-- Moved to the bottom -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
     &copy;2023 THE CRAZY WORLD. All Rights Reserved.

@@ -1,0 +1,14 @@
+<!-- populatedcountries.component.html -->
+<div>
+    <h2>Top 10 Populated Countries</h2>
+    <ul class="country-list">
+      <li *ngFor="let country of countries" class="country-item">
+        <div class="country-info">
+          <h3>{{ country.name }}</h3>
+          <p>Population: {{ country.population }}</p>
+          <!-- Add more details as needed -->
+        </div>
+      </li>
+    </ul>
+  </div>
+  

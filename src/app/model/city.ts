@@ -2,10 +2,10 @@ import { Country } from "./country";
 
 export class City {
     constructor(
-        id: number,
-        name: string,
-        district: string,
-        population: number,
-        country: Country
+        public id: number,
+       public  name: string,
+       public  district: string,
+        public population: number,
+        public country: Country
     ){}
 }
