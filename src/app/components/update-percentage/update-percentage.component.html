@@ -1,0 +1,17 @@
+<div>
+    <label for="countryCode">Country Code:</label>
+    <input type="text" id="countryCode" [(ngModel)]="countryCode">
+    <br>
+    <label for="language">Language:</label>
+    <input type="text" id="language" [(ngModel)]="language">
+    <br>
+    <label for="newPercentage">New Percentage:</label>
+    <input type="number" id="newPercentage" [(ngModel)]="newPercentage">
+    <br>
+    <button (click)="updatePercentage()">Update Percentage</button>
+  
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  </div>
+  

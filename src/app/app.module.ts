@@ -40,6 +40,12 @@ import { CountryCityCountComponent } from './components/country-city-count/count
 import { LogoutComponent } from './components/logout/logout.component';
 import { LogindisplayComponent } from './components/logindisplay/logindisplay.component';
 import { LoginComponent } from './components/login/login.component';
+import { UpdateCitypopulationComponent } from './components/update-citypopulation/update-citypopulation.component';
+import { UpdateDirstictComponent } from './components/update-dirstict/update-dirstict.component';
+import { UpdateGnpComponent } from './components/update-gnp/update-gnp.component';
+import { UpdateHeadOfStateComponent } from './components/update-head-of-state/update-head-of-state.component';
+import { UpdatePercentageComponent } from './components/update-percentage/update-percentage.component';
+import { UpdatePopulationComponent } from './components/update-population/update-population.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +83,13 @@ import { LoginComponent } from './components/login/login.component';
     CountryCityCountComponent,
     LoginComponent,
     LogindisplayComponent,
-    LogoutComponent
+    LogoutComponent,
+    UpdateHeadOfStateComponent,
+    UpdateGnpComponent,
+    UpdatePopulationComponent,
+    UpdatePercentageComponent,
+    UpdateDirstictComponent,
+    UpdateCitypopulationComponent
 
   ],
   imports: [

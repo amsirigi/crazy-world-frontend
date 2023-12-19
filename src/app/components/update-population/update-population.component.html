@@ -1,0 +1,13 @@
+<div>
+    <label for="countryName">Country Name:</label>
+    <input type="text" id="countryName" [(ngModel)]="countryName">
+    <br>
+    <label for="newPopulation">New Population:</label>
+    <input type="number" id="newPopulation" [(ngModel)]="newPopulation">
+    <br>
+    <button (click)="updatePopulation()">Update Population</button>
+  
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  </div>

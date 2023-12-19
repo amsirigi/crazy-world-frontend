@@ -1,18 +1,25 @@
 <div class="row">
     <div class="col-md-3 left-side bg-light text-dark p-4">
-      <h2>Country Languages</h2>
+      <h2>Admin update</h2>
       <nav class="nav flex-column">
-        <li><a routerLink="/logindisplay/updateHeadofState">Admin Updates</a></li>
-        <!-- <li><a routerLink="/lang/country-languages">Country Languages by Code</a></li>
-        <li><a routerLink="/lang/official-languages">All Official Country Languages</a></li>
+        <li><a routerLink="/logindisplay/updateHeadofState">Head Of State</a></li>
+        <li><a routerLink="/logindisplay/updategnp">Gross National Product</a></li>
+        <li><a routerLink="/logindisplay/updatepopulation">Population</a></li>
+        <li><a routerLink="/logindisplay/updatepercentage">Language Percentage</a></li>
+        <li><a routerLink="/logindisplay/updatedistrict">District</a></li>
+        <li><a routerLink="/logindisplay/updatecitypoppulation">City Population</a></li>
+        
+        
+        <!-- <li><a routerLink="/lang/official-languages">All Official Country Languages</a></li>
         <li><a routerLink="/lang/unofficial-languages">Unofficial Country Languages by Code</a></li>
         <li><a routerLink="/lang/max-spoken-languages">Max Spoken Languages</a></li>
-        <li><a routerLink="/lang/max-spoken-language-by-code">Max Spoken Language by Code</a></li> -->
+        <li><a routerLink="/lang/max-spoken-language-by-code">Max Spoken Language by Code</a></li> --> 
       </nav>
     </div>
-    <div class="col-md-9 separator p-4">
+     <div class="col-md-9 separator p-4">
       <p *ngIf="countrylanguagefact" class="lead">{{ countrylanguagefact }}</p>
       <router-outlet></router-outlet>
     </div>
+   
   </div>
    

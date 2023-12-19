@@ -31,6 +31,12 @@ import { DistrictAvgPopulationComponent } from './components/district-avg-popula
 import { CountryCityCountComponent } from './components/country-city-count/country-city-count.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogindisplayComponent } from './components/logindisplay/logindisplay.component';
+import { UpdateCitypopulationComponent } from './components/update-citypopulation/update-citypopulation.component';
+import { UpdateDirstictComponent } from './components/update-dirstict/update-dirstict.component';
+import { UpdateGnpComponent } from './components/update-gnp/update-gnp.component';
+import { UpdateHeadOfStateComponent } from './components/update-head-of-state/update-head-of-state.component';
+import { UpdatePercentageComponent } from './components/update-percentage/update-percentage.component';
+import { UpdatePopulationComponent } from './components/update-population/update-population.component';
 
 const routes: Routes = [
   {path:'',component:HomePageComponent},
@@ -85,6 +91,20 @@ children:[
   { path: 'max-spoken-languages', component: MaxSpokenLanguagesComponent },
   { path: 'max-spoken-language-by-code', component: MaxSpokenLanguageByCodeComponent },
 ] },
+
+
+{
+  path: 'logindisplay',
+  component: LogindisplayComponent,
+  children: [
+    { path: 'updateHeadofState', component: UpdateHeadOfStateComponent },
+    { path: 'updategnp', component: UpdateGnpComponent },
+    { path:'updatepopulation', component: UpdatePopulationComponent},
+    { path: 'updatepercentage', component: UpdatePercentageComponent},
+    { path: 'updatedistrict', component: UpdateDirstictComponent},
+    { path: 'updatecitypoppulation', component: UpdateCitypopulationComponent}
+  ]
+},
 ];
 
 @NgModule({
